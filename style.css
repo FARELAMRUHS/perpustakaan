@@ -1,0 +1,327 @@
+/* Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .glassy {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .neumorphic-button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #f4f7fb;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .neumorphic-button:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
+  }
+  
+  input,
+  select,
+  textarea {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(100, 100, 255, 0.5);
+  }
+  
+  button {
+    background-color: #4e73df;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #375a8e;
+  }
+  
+  .theme-dark {
+    background-color: #2e2e3e;
+    color: #e4e6eb;
+  }
+  
+  .theme-light {
+    background-color: #f4f7fb;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  header .theme-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Input and Form Styles */
+  input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"],
+  button {
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 12px 20px;
+    background-color: #3c56e7fd;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #2194c9;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  /* Book List Styling */
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-card h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .book-card p {
+    color: #555;
+  }
+  
+  .book-card button {
+    margin-top: 10px;
+    width: 48%;
+    font-size: 0.9rem;
+  }
+  
+  .book-card .btn-edit {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .book-card .btn-delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .book-card .btn-edit:hover {
+    background-color: #e0a800;
+  }
+  
+  .book-card .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Search and Filter */
+  .search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input,
+  .search-bar select {
+    width: 48%;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .search-bar input:focus,
+  .search-bar select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(100, 100, 255, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .book-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-bar input,
+    .search-bar select {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .book-card {
+      padding: 15px;
+    }
+  }
+  /* Tema terang */
+body.theme-light {
+    color: black;
+    background-color: #f8f9fa;
+  }
+  
+  body.theme-light .main-card,
+  body.theme-light .card,
+  body.theme-light .book-card {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Tema gelap */
+body.theme-dark {
+    color: white;
+    background-color: #343a40;
+  }
+  
+  body.theme-dark .main-card,
+  body.theme-dark .card,
+  body.theme-dark .book-card {
+    background-color: #495057;
+    color: #e4e6eb; /* Warna teks menjadi putih atau abu-abu terang di tema gelap */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Menambahkan warna teks putih untuk card dan teks buku dalam tema gelap */
+  body.theme-dark .book-card h5,
+  body.theme-dark .book-card p {
+    color: white; /* Menjadikan teks di dalam card buku putih */
+  }
+  
+  body.theme-dark .card-title,
+  body.theme-dark .card-text {
+    color: white; /* Menjadikan teks di card umum putih */
+  }
+  
+  /* Box shadow transition */
+  .main-card,
+  .card,
+  .book-card {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Tombol Edit dan Hapus untuk Tema Gelap */
+body.theme-dark .book-card .btn-edit {
+    background-color: #e0a800; /* Warna kuning terang untuk Edit */
+    color: white;
+}
+
+body.theme-dark .book-card .btn-delete {
+    background-color: #c82333; /* Warna merah terang untuk Hapus */
+    color: white;
+}
+
+body.theme-dark .book-card .btn-edit:hover {
+    background-color: #d39e00; /* Warna hover kuning lebih gelap */
+}
+
+body.theme-dark .book-card .btn-delete:hover {
+    background-color: #bd2130; /* Warna hover merah lebih gelap */
+}
+
+  
